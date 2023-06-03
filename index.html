@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="styles.css" rel="stylesheet">
+        <title>Kairos</title>
+        <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Kairos">
+        <meta property="og:description" content="Programmer, personification of time.">
+        <meta property="og:type" content="website">
+        <script src="./portfolio.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <header class="box nameBox" style="margin-top: 45px;">
+            <div>
+                <h1 style="color: #2ff135">Kairos</h1>
+                <p style="color: #2ff135; margin-top: 3px; font-size: 18px;">Programmer and personification of time</p>
+            </div>
+            <div id="socials" style="top: 1% !important; margin-top: 3px; display: flex; flex-direction: row; font-size: 0;">
+                <a href="https://kairosthegoat.itch.io/" style="text-decoration: none !important;" title="Itch.io" target="_blank">
+                    <img class="socialIcon" src="./assets/itchio.svg" alt="Itch.io">
+                    <p class="makevisible">Itch.io</p>
+                </a>
+                <a href="https://tumblr.com/kairosthegoat" style="text-decoration: none !important;" title="Tumblr" target="_blank">
+                    <img class="socialIcon" src="./assets/tumblr.svg" alt="Tumblr">
+                    <p class="makevisible">Tumblr</p>
+                </a>
+                <a href="https://github.com/The-Goat-Kairos" style="text-decoration: none !important;" title="GitHub" target="_blank">
+                    <img class="socialIcon" src="./assets/github.svg" alt="GitHub">
+                    <p class="makevisible">GitHub</p>
+                </a>
+            </div>
+        </header>
+        <div id="introduction">
+            <div style="display: flex; flex-direction: column; text-align: center; align-items: center; justify-content: center;">
+                <p id="aboutMe" style="font-weight: bold; max-width: 420px; font-size: 60px; margin-bottom: 0%;">Exalts and Transcends</p>
+                <p style="margin: 0; margin-right: 10%; line-height: 120%; max-width: 55%;">Hi, my name is Kairos and I make random things on the internet.</p>
+            </div>
+            <img src="./assets/kairos.png" height="223" alt="Kairos Image">
+        </div>
+
+        <br>
+ 
+        <div id="featured">
+            <div class="featuredItem">
+                <p style="font-size: 180%; font-weight: bold;">I made a Minecraft plugin!</p>
+                <p style="font-size: 120%;">It's about magic 'n stuff?</p>
+                <button id="arcanion" title="Arcanion" class="featureButton" style="border: #8A3AE6; border-radius: 5px; background: linear-gradient(135deg, #F230EE 0%, #C832FC 50%, #b854ff 75%, #b325e2 100%); ">Arcanion</button>
+            </div>
+            <div class="featuredItem">
+                <p style="font-size: 180%; font-weight: bold;">I don't know yet</p>
+                <p style="font-size: 120%;">I am working on it... trust me</p>
+                <button title="Not available" class="featureButton" style="border: #8A3AE6; border-radius: 5px; background: linear-gradient(225deg, #41F286 0%, #44FC58 25%, #6CE64A 50%, #ACFC44 75%, #E3F241 100%); ">Not available yet</button>
+            </div>
+        </div>
+        
+        <br>
+        
+        <div id="interests">
+            <h3 id="interesth3" style="font-size: 2em;">My interests</h3>
+            <div id="interestCategories">
+                <div class="interestItem bigger" style="width: 33%">
+                    <p class="interestTitle">Kotlin</p>
+                    <p class="interestDesc">Kotlin > Java</p>
+                    <a href="#kotlin" bg="17,9,173" type="kotlin" title="Go to my Kotlin projects" class="scroll-link pointer interestSelect"><img width="200px" src="./assets/kotlin.svg"></a>
+                </div>
+                <div class="interestItem bigger" style="width: 33%">
+                    <p class="interestTitle">Javascript</p>
+                    <p class="interestDesc">Mainly JQuery and school</p>
+                    <a href="#websites" bg="222,20,20" type="site" title="Go to my Javascript projects" class="scroll-link pointer interestSelect"><img width="200px" src="./assets/javascript.svg"></a>
+                </div>
+                <div class="interestItem bigger" style="width: 33%">
+                    <p class="interestTitle">My fantasy world</p>
+                    <p class="interestDesc">A fantasy universe called Aureola</p>
+                    <a title="Discover my fantasy world" class="pointer"><img width="200px" src="./assets/phoenix.jpg"></a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div id="currently">
+            <button id="currentproject" title="My current project" class="pointer" style="border-color: #DB3707; border-radius: 5px; background: linear-gradient(225deg, #E8780C 0%, #F25C0C 25%, #DB2D00 50%, #F2190C 75%, #E80C51 100%); ">
+                My current project
+            </button>
+        </div>
+
+        <br>
+
+        <div id="showcase">
+            <h2>Cool things I've made!</h2>
+            <div id="selectors">
+                <button bg="222,20,20" style="background: rgba(222, 20, 20, 0.8)" type="site" tabindex="0" id="websites" class="pointer select selected">Websites</button>
+                <button bg="17,9,173" style="background: rgba(17, 9, 173, 0.4);" type="kotlin" tabindex="1" id="kotlin" class="pointer select">Kotlin</button>
+                <button bg="255,128,0" style="background: rgba(255, 128, 0, 0.4);" type="minecraft" tabindex="2" id="minecraft" class="pointer select">Minecraft</button>
+                <button bg="25,140,17" style="background: rgba(25, 140, 17, 0.4);" type="school" tabindex="3" id="school" class="pointer select">School Stuff</button>
+            </div>
+            <div id="portfolio">
+                <a href="https://daniel.coderschool.nl/TerriblePhoneNumber/index.php" style="background-color:rgba(222, 20, 20, 0.55);" class="card pointer">
+                    <div class="title">
+                        <img style="margin: auto 3% auto 3%;" src="./assets/portfolio/none.png" width="40">
+                        <p class="cardTitle">World's worst input</p>
+                    </div>
+                    <div class="description">
+                        The world's worst phone number inputter ever.
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <br>
+        
+        <div id="poemscontainer">
+            <h3 style="font-size: 1.75em;">Spell chants I stole from novels I like:</h3>
+            <div id="poemsdiv">
+                <div id="poem1" class="poems">
+                    <p>The winds rise, the world stirs.</p>
+                    <p>The winds and clouds rise high.</p>
+                    <p>All because of me!</p>
+                </div>
+        
+                <div id="poem2" class="poems">
+                    <p>Life passes by like a dream,</p>
+                    <p>A swans step in the snow,</p>
+                    <p>Where warriors leave their mark, their valor brightly aglow,</p>
+                    <p>In this realm, their spirits forever soar,</p>
+                    <p>Bathing the world in awe, forevermore.</p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div id="socials">
+            <p style="font-size: 1.35em">Reach me here:</p>
+            <div id="sociallinks">
+                <button title="Reach me on discord!" style="border: #424549; border-radius: 5px; background-color: #424549;" class="socialsbutton pointer" id="discordcopy">
+                    Discord
+                </button>
+                <button title="Reach me on... Tumblr?? Why?" style="border: #36465D; border-radius: 5px; background-color: #36465D;" class="socialsbutton pointer" id="tumblrdm">
+                    Tumblr?
+                </button>
+            </div>
+        </div>
+
+        <br>
+
+        <p style="margin-bottom: 1.5%; font-size: 0.9em; display: flex; justify-content: center; text-align: center; align-items: center; color: grey">
+            Background art by: <a href="#" style="margin-left: 0.35%; color: rgb(116, 116, 116);">me!</a>
+        </p>
+        
+        <script>
+            $('img').attr('draggable', false);
+            $(document).ready(function() {
+                
+                $(".scroll-link").click(function(event) {
+                    event.preventDefault();
+
+                    const target = $($(this).attr("href"));
+                    const offset = -70;
+
+                    if (target.length) {
+                    $("html, body").animate({
+                        scrollTop: target.offset().top + offset
+                    }, 800);
+                    }
+                });
+
+                $("#socials a").hover(
+                    function() {
+                        $(this).find("p.makevisible").css("font-size", "16px");
+                    },
+                    function() {
+                        $(this).find("p.makevisible").css("font-size", "0px");
+                    }
+                );
+            });
+
+            $("#currentproject").click(function(){
+                location.href = "./currentproject.html"
+            })
+            
+            $("#discordcopy").click(function(){
+                navigator.clipboard.writeText("Kairos#7577");
+                alert("You just copied Kairos#7577. Add me as a friend or send me a DM if you want!")
+            });
+
+            $("#tumblrdm").click(function(){
+                location.href = "https://tumblr.com/new/ask/kairosthegoat";
+            });
+            $("#arcanion").click(function(){
+                location.href = "https://github.com/The-Goat-Kairos";
+            });
+            
+            function colorPointers(){
+                $(".select").each(function(){
+                    let pointer = $(this);
+                    let bg = pointer.attr('bg')
+                    if (pointer.hasClass('selected')) pointer.css('background-color', `rgba(${bg}, 0.75)`)
+                    else pointer.css('background-color', `rgba(${bg}, 0.4)`)
+                })
+            }
+            
+            $(document).on('click', '.interestSelect', function(){
+                let type = $(this).attr("type");
+                $("#portfolio").html("")
+                $(".select").removeClass("selected")
+                let stuff = $(".select[type='" + type + "']").addClass("selected");
+                let color = stuff.attr("bg")
+
+                let stuff2 = portfolio.filter(x => {
+                    if (Array.isArray(x.type)) {
+                        return x.type.includes(type);
+                    } else {
+                        return x.type === type;
+                    }
+                }).sort((a, b) => a.name.localeCompare(b.name))
+
+                stuff2.forEach(x => $("#portfolio").append(`
+                <a style="background-color:rgba(${color},0.55);" href="${x.link}" class="card pointer">
+                    <div class="title">
+                        <img width="40" style="margin: auto 3% auto 3%;" <img src="./assets/portfolio/${x.icon || "none"}.png">
+                        <p class="cardTitle">${x.name}</p>
+                    </div>
+                    <div class="description">
+                        ${x.description}
+                    </div>
+                </a>`)
+                    
+                );
+            });
+
+            $(document).on('click', '.select', function(){
+                $("#portfolio").html("");
+                var color = $(this).attr("bg");
+                let type = $(this).attr('type');
+                
+                $(".select").removeClass("selected");
+                $(this).addClass("selected");
+
+                colorPointers();
+
+                let stuff = portfolio.filter(x => {
+                    if (Array.isArray(x.type)) {
+                        return x.type.includes(type);
+                    } else {
+                        return x.type === type;
+                    }
+                }).sort((a, b) => a.name.localeCompare(b.name))
+                stuff.forEach(x => $("#portfolio").append(`
+                <a style="background-color:rgba(${color},0.55);" href="${x.link}" class="card pointer">
+                    <div class="title">
+                        <img width="40" style="margin: auto 3% auto 3%;" <img src="./assets/portfolio/${x.icon || "none"}.png">
+                        <p class="cardTitle">${x.name}</p>
+                    </div>
+                    <div class="description">
+                        ${x.description}
+                    </div>
+                </a>`)
+                    
+                );
+            })
+          </script>
+    </body>
+</html>
